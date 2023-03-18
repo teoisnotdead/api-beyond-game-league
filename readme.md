@@ -6,4 +6,4 @@ Proyect developed for tournaments, primarily for VALORANT
 - NodeJS
 - Express
 - MongoDB
-- React
+- Mongoose
