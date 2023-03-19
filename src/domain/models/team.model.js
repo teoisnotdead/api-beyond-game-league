@@ -17,6 +17,18 @@ const teamSchema = new Schema({
       ref: 'Player',
     },
   ],
+  captain: {
+    type: Schema.Types.ObjectId,
+    ref: 'Player',
+  },
+  coach: {
+    type: Schema.Types.ObjectId,
+    ref: 'Player',
+  },
+  createdBy: {
+    type: Schema.Types.ObjectId,
+    ref: 'User',
+  },
   createdAt: {
     type: Date,
     default: Date.now,
