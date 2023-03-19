@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const config = require('./config');
 const teamRoutes = require('./routes/team.routes');
 const playerRoutes = require('./routes/player.routes');
-// const tournamentRoutes = require('./routes/tournament.routes');
+const tournamentRoutes = require('./routes/tournament.routes');
 
 const app = express();
 
@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/api/teams', teamRoutes);
 app.use('/api/players', playerRoutes);
-// app.use('/api/tournaments', tournamentRoutes);
+app.use('/api/tournaments', tournamentRoutes);
 
 app.get("/", (req, res) => {
   res.send(`<h1
